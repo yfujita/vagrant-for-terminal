@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  src_dir = 'd:/tmp'
+  src_dir = 'd:/'
   doc_root = '/vmshare'
   config.omnibus.chef_version = :latest
 
