@@ -23,5 +23,6 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "timezone"
     chef.add_recipe "profile"
     chef.add_recipe "tmux"
+    chef.add_recipe "maven"
   end
 end
