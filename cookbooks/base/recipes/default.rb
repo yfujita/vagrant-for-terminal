@@ -1,4 +1,4 @@
-%w{curl git unzip vim}.each do |pkg|
+%w{curl git unzip vim telnet}.each do |pkg|
   package pkg do
     action [:install, :upgrade]
   end
