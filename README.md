@@ -5,7 +5,8 @@
 
 ## 使い方
 1. vagrantをインストール[vagrant](http://www.vagrantup.com/)。VirtualBoxもインストール[VirtualBox](https://www.virtualbox.org/)。
-2. Vagrantfileのsrc_dirにホスト側の共有するフォルダを設定する。
-3. vagrant up
-4. teratermとかでsshで接続する。 userとpassは"vagrant"
-5. tmuxとか使える。/vmshare下にホスト側のファイルとかあるのでtmuxとかでいじれて嬉しい。
+2. vagrant-omnibusプラグインをインストール（vagrant plugin install vagrant-omnibus）
+3. Vagrantfileのsrc_dirにホスト側の共有するフォルダを設定する。
+4. vagrant up
+5. teratermとかでsshで接続する。 userとpassは"vagrant"
+6. tmuxとか使える。/vmshare下にホスト側のファイルとかあるのでtmuxとかでいじれて嬉しい。
