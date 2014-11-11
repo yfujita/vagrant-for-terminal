@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  src_dir = 'c:/'
+  src_dir = 'd:/'
   doc_root = '/vmshare'
   config.omnibus.chef_version = :latest
 
@@ -20,10 +20,13 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "./cookbooks"
+    chef.add_recipe "yum"
+    chef.add_recipe "build-essential"
     chef.add_recipe "base"
     chef.add_recipe "timezone"
     chef.add_recipe "profile"
     chef.add_recipe "tmux"
     chef.add_recipe "maven"
+    chef.add_recipe "python"
   end
 end
